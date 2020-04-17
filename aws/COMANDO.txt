@@ -1,0 +1,72 @@
+ARQUIVO WINSCP= QUANDO PUBLIQUEI LÁ DENTRO 
+
+1  chmod 400 DigitalHealthKey.pem
+    2  root
+    3  status
+    4  chmod 400 DigitalHealthKey.apk
+    5  chmod 400 ~/Downloads/DigitalHealthKey.pem
+    6  chmod 400 /Users/Aluno/Downloads/DigitalHealthKey.pem
+    7  chmod 400 /Users/Aluno/Downloads/DigitalHealthKeyTeste
+    8  chmod 400 /Users/Aluno/Downloads/DigitalHealthKey.pem
+    9  chmod 400 \Users\Aluno\Downloads\DigitalHealthKey.pem
+   10  ec2-18-204-211-231.compute-1.amazonaws.com
+   11  pscp -i C:\Users\Aluno\Downloads\DigitalHealthKeyTeste.ppk C:\Users\Aluno\Desktop\DigitalHealth\DigitalHealthApp\DigitalHealthApp\target\DigitalHealthApp-0.0.1-SNAPSHOT.jar ubuntu@ec2-18-204-211-231.compute-1.amazonaws.com:~
+   12  sudo apt install putty-tools
+   13  pscp -i C:\Users\Aluno\Downloads\DigitalHealthKeyTeste.ppk C:\Users\Aluno\Desktop\DigitalHealth\DigitalHealthApp\DigitalHealthApp\target\DigitalHealthApp-0.0.1-SNAPSHOT.jar ubuntu@ec2-18-204-211-231.compute-1.amazonaws.com:~
+   14  sudo apt install putty-tools
+   15  to be
+   16  pscp -i C:\Users\Aluno\Downloads\DigitalHealthKeyTeste.ppk C:\Users\Aluno\Desktop\DigitalHealth\DigitalHealthApp\DigitalHealthApp\target\DigitalHealthApp-0.0.1-SNAPSHOT.jar ubuntu@ec2-18-204-211-231.compute-1.amazonaws.com:~
+   17  sudo apt install putty-tools pscp
+   18  sudo pscp -i C:\Users\Aluno\Downloads\DigitalHealthKeyTeste.ppk C:\Users\Aluno\Desktop\DigitalHealth\DigitalHealthApp\DigitalHealthApp\target\DigitalHealthApp-0.0.1-SNAPSHOT.jar ubuntu@ec2-18-204-211-231.compute-1.amazonaws.com:~
+   19  pscp -i C:\Users\Aluno\Downloads\DigitalHealthKeyTeste.ppk C:\Users\Aluno\Desktop\DigitalHealth\DigitalHealthApp\DigitalHealthApp\target\DigitalHealthApp-0.0.1-SNAPSHOT.jar ubuntu@ec2-18-204-211-231.compute-1.amazonaws.com:~
+   20  sudo apt install putty-tools pscp
+   21  sudo apt install putty-tools
+   22  sudo su -
+   23  pscp
+   24  pscp -i C:\Users\Aluno\Downloads\DigitalHealthKeyTeste.ppk C:\Users\Aluno\Desktop\DigitalHealth\DigitalHealthApp\DigitalHealthApp\target\DigitalHealthApp-0.0.1-SNAPSHOT.jar ubuntu@ec2-18-204-211-231.compute-1.amazonaws.com:~
+   25  pscp -i C:\Users\Aluno\Downloads\DigitalHealthKeyTeste.ppk C:\Users\Aluno\Desktop\DigitalHealth\DigitalHealthApp\DigitalHealthApp\target\DigitalHealthApp-0.0.1-SNAPSHOT.jar ubuntu@ec2-18-204-211-231.compute-1.amazonaws.com:~sudo su -
+   26  sudo su -
+   27  sudo yum install -y openssh-clients
+   28  apt - get install yum*
+   29  apt- get install yum*
+   30  java -jar DigitalHealth/DigitalHealthApp-0.0.1-SNAPSHOT.jar
+   31  /home/ubuntu/DigitalHealth# java -jar DigitalHealthApp-0.0.1-SNAPSHOT
+   32  /home/ubuntu/DigitalHealth# java -jar DigitalHealth/DigitalHealthApp-0.0.1-SNAPSHOT.jar
+   33  /home/ubuntu/DigitalHealth# java -jar
+   34  /home/ubuntu/DigitalHealth# java -jar DigitalHealthApp-0.0.1-SNAPSHOT
+   35  DigitalHealthApp-0.0.1-SNAPSHOT.jar
+   36  java -jar
+   37  /home/ubuntu# cd DigitalHealth/
+   38  /home/ubuntu/DigitalHealth# java -jar DigitalHealthApp-0.0.1-SNAPSHOT
+   39  sudo su -
+   40  /home/ubuntu/DigitalHealth# java -jar DigitalHealthApp-0.0.1-SNAPSHOT
+   41  cd /
+   42  cd /home/ubuntu/DigitalHealth/
+   43  ll
+   44  /home/ubuntu/DigitalHealth java -jar DigitalHealthApp-0.0.1-SNAPSHOT
+   45  vim  DigitalHealthApp-0.0.1-SNAPSHOT
+   46  /home/ubuntu/DigitalHealth java -jar DigitalHealthApp-0.0.1-SNAPSHOT
+   47  /home/ubuntu/DigitalHealth/ java -jar DigitalHealthApp-0.0.1-SNAPSHOT
+   48  java -jar DigitalHealthApp-0.0.1-SNAPSHOT
+   49  /home/ubuntu/DigitalHealth/DigitalHealthApp/DigitalHealthApp java -jar DigitalHealthApp-0.0.1-SNAPSHOT
+   50  java - jar DigitalHealthApp-0.0.1-SNAPSHOT
+   51  /usr/bin/java -jar /home/ubuntu/DigitalHealth/DigitalHealthApp/DigitalHealthApp DigitalHealthApp-0.0.1-SNAPSHOT.jar
+   52  /usr/bin/java -jar  DigitalHealthApp-0.0.1-SNAPSHOT.jar
+   53  ll
+   54  cd /home
+   55  ll
+   56  cd /ubuntu
+   57  cd ubuntu/
+   58  ll
+   59  cd DigitalHealth/
+   60  ll
+   61  cd ./
+   62  ll
+   63  cd ../
+   64  cd /home
+   65  cd ubuntu/
+   66  cd DigitalHealth/
+   67  /usr/bin/java -jar DigitalHealthApp-0.0.1-SNAPSHOT-jar-with-depenceies.jar
+   68  /usr/bin/java -jar DigitalHealthApp-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+   69  ll
+   70  history

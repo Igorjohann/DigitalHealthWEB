@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+  <style>
+    #receitas {
+      width: 800px;
+      height: 200px;
+    }
+    #receita1 {
+      position:relative;
+      width: 200px;
+      height: 200px;
+      background-color:#8B2A2A;
+      float: left;
+    }
+    #receita2 {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color:rgba(139, 42, 42, 0.445);
+      float: left;
+    }
+    #receita3 {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color:#8B2A2A;
+      float: left;
+    }
+    #receita4 {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color:rgba(139, 42, 42, 0.445);
+
+      float:left;
+    }
+      #receita5 {
+      position:relative;
+      width: 200px;
+      height: 200px;
+      background-color:rgba(139, 42, 42, 0.445);
+
+      float: left;
+    }
+    #receita6 {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color:#8B2A2A;
+      float: left;
+    }
+    #receita7 {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color:rgba(139, 42, 42, 0.445);
+      float: left;
+    }
+    #receita8 {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color:#8B2A2A;
+      float:left;
+    }
+    </style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Digital Health | Perfil Paciente</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+
+  <!--NECESSÁRIO EM TODAS AS TELAS, POIS É A LIB AJAX-->		
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body id="page-top" background="./img/fundoDegrade.jpg">
+
+  <nav class="navbar navbar-light" style="background-color: #B80F0F;">
+    <img src="./img/logo.png" alt="Smiley face" height="70" width="240">
+
+    
+
+    <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <div id="wrapper">
+
+    <!-- Menu  -->
+    <ul class="sidebar navbar-nav" style="background-color: #5C2323;">
+	
+      <li class="nav-item">
+        <a class="nav-link" href="Paciente_Receitas.html">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Receitas </span>
+        </a>
+      </li>
+     
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="login.html">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Sair</span>
+        </a>
+      </li>
+     
+    </ul>
+
+    <div id="content-wrapper">
+
+      <div class="container-fluid">
+
+        <!-- Breadcrumbs-->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="Paciente_Principal.html">Inicial</a>
+              </li>
+             
+               
+          <li class="breadcrumb-item active">Histórico de receitas</li>
+        </ol>
+
+        <!-- Page Content -->
+        <br>
+        
+        <center>  
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+            <form action="" id="buscarReceita">
+            <div id="receitas">
+                  <div id="receita1">
+                     <br>
+                     <b  style="color:white;"> TIPO RECEITA : </b>
+                     <a style="color:white;" id="id"> {ID}</a> <br>
+                     <b  style="color:white;"> Data da emissão : </b> <br>
+                     <a style="color:white;" id="dataEmissao"> {DATA}</a> <br>
+                     <b  style="color:white;"> Médico : </b> <br>
+                     <a style="color:white;" id="nomeMedico"> {MEDICO}</a> <br>
+                     <a href="Paciente_Receitas_Detalhe.html">  <button type="button" class="btn btn-secondary btn-sm" style="width:100px; height:35px; border-radius: 15px; background-color:#C4C4C4; color:black;"> Entrar </button>
+                     </a>
+                  </div>
+                  <div id="receita2">
+                    <br>
+                    <b  style="color:white;"> TIPO RECEITA : </b>
+                    <a style="color:white;" id="id2"> {ID}</a> <br>
+                    <b  style="color:white;"> Data da emissão : </b> <br>
+                    <a style="color:white;" id="dataEmissao2"> {DATA}</a> <br>
+                    <b  style="color:white;"> Médico : </b> <br>
+                    <a style="color:white;" id="nomeMedico2"> {MEDICO}</a> <br>
+                    <a href="Paciente_Receitas_Detalhe.html">  <button type="button" class="btn btn-secondary btn-sm" style="width:100px; height:35px; border-radius: 15px; background-color:#C4C4C4; color:black;"> Entrar </button>
+                    </a>
+
+                  </div>
+                  <div id="receita3">
+                    <br>
+                    <b  style="color:white;"> TIPO RECEITA : </b>
+                    <a style="color:white;" id="id3"> {ID}</a> <br>
+                    <b  style="color:white;"> Data da emissão : </b> <br>
+                    <a style="color:white;" id="dataEmissao3"> {DATA}</a> <br>
+                    <b  style="color:white;"> Médico : </b> <br>
+                    <a style="color:white;" id="nomeMedico3"> {MEDICO}</a> <br>
+                 
+                    <a href="Paciente_Receitas_Detalhe.html">  <button type="button" class="btn btn-secondary btn-sm" style="width:100px; height:35px; border-radius: 15px; background-color:#C4C4C4; color:black;"> Entrar </button>
+                    </a>
+                  </div>
+                  <div id="receita4">
+                    <br>
+                    <b  style="color:white;"> TIPO RECEITA : </b>
+                    <a style="color:white;" id="id4"> {ID}</a> <br>
+                    <b  style="color:white;"> Data da emissão : </b> <br>
+                    <a style="color:white;" id="dataEmissao4"> {DATA}</a> <br>
+                    <b  style="color:white;"> Médico : </b> <br>
+                    <a style="color:white;" id="nomeMedico4"> {MEDICO}</a> <br>
+                 
+                    <a href="Paciente_Receitas_Detalhe.html">  <button type="button" class="btn btn-secondary btn-sm" style="width:100px; height:35px; border-radius: 15px; background-color:#C4C4C4; color:black;"> Entrar </button>
+                    </a>
+                  
+              
+              </div>
+            </form>
+      </center>     
+
+    </div>
+
+  </div>
+
+
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="js/sb-admin.min.js"></script>
+
+</body>
+
+</html>
+
+<script> 
+	// pra ver se o jquery funciona
+  $(document).ready(function () {
+			console.log("ready!");
+      //$.ajax
+      $.ajax("http://localhost:8080/receitas/cpf/" +	localStorage.getItem("cpfPaciente"), {
+				//Tipo GET, POST, PUT, DELET
+				method: 'GET',
+				//ISSO É PADRÃO, OU SEJA, O MESMO QUE COLOCAMOS NO BODY QUANDO FAZEMOS UMA REQUISIÇÃO NO POSTMAN
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				
+				success: function (resposta) {
+					
+					if (resposta) {
+						console.log(resposta)
+		
+
+            $('#id').text(resposta[0].tipoReceita);
+            $('#dataEmissao').text(resposta[0].dataReceita);
+            $('#nomeMedico').text(resposta[0].nomeMedico);
+            $('#receita1').show()
+
+            $('#id2').text(resposta[1].tipoReceita);
+            $('#dataEmissao2').text(resposta[1].dataReceita);
+            $('#nomeMedico2').text(resposta[1].nomeMedico);
+            $('#receita2').show()
+
+            $('#id3').text(resposta[2].tipoReceita);
+            $('#dataEmissao3').text(resposta[2].dataReceita);
+            $('#nomeMedico3').text(resposta[2].nomeMedico);
+            $('#receita3').show()
+
+            $('#id4').text(resposta[3].tipoReceita);
+            $('#dataEmissao4').text(resposta[3].dataReceita);
+            $('#nomeMedico4').text(resposta[3].nomeMedico);
+            $('#receita4').show()
+            console.log(resposta)
+            
+					} else {
+					
+					}
+				},
+				error: function (erro) {
+          console.log(resposta)
+					console.log(erro);
+        }
+        })
+	
+		});
+
+					
+
+
+function apareceDesaparece(el) {
+        var display = document.getElementById(el).style.display;
+        if(display == "none")
+            document.getElementById(el).style.display = 'block';
+        else
+            document.getElementById(el).style.display = 'none';
+    }
+</script>	

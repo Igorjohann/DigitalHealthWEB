@@ -1,0 +1,6 @@
+jdbc:h2:file:C:\Users\Aluno\Desktop\DigitalHealth\DigitalHealthTeste\DigitalHealthApp\db/database;AUTO_SERVER=TRUE
+
+
+jdbc:h2:file:C:\Users\ilevino\Desktop\DigitalHealth\DigitalHealthTeste\DigitalHealthApp\db/database;AUTO_SERVER=TRUE
+
+jdbc:h2:file:C:\Users\ilevino\Desktop\DigitalHealth\DigitalHealthApp\DigitalHealthApp\db/database;AUTO_SERVER=TRUE

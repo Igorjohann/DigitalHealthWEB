@@ -1,0 +1,24 @@
+{    
+"database":
+ {
+    "server": "digitalhealth.database.windows.net",
+    "user": "digitalhealth",
+    "password": "digital1234@",
+    "database": "DigitalHealth",
+    "options": 
+		{
+            
+			"encrypt": true
+			
+        }
+    },
+   
+    "security":
+	
+	
+	{
+	
+        "key": "CHAVE_SEGURANCA"
+		
+    }
+}

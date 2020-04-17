@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <style>
+    #receitas {
+      width: 800px;
+      height: 200px;
+    }
+    #receita1 {
+      position:relative;
+      width: 200px;
+      height: 200px;
+      background-color:#8B2A2A;
+      float: left;
+    }
+    #receita2 {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color:rgba(139, 42, 42, 0.445);
+      float: left;
+    }
+    #receita3 {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color:#8B2A2A;
+      float: left;
+    }
+    #receita4 {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color:rgba(139, 42, 42, 0.445);
+
+      float:left;
+    }
+      #receita5 {
+      position:relative;
+      width: 200px;
+      height: 200px;
+      background-color:rgba(139, 42, 42, 0.445);
+
+      float: left;
+    }
+    #receita6 {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color:#8B2A2A;
+      float: left;
+    }
+    #receita7 {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color:rgba(139, 42, 42, 0.445);
+      float: left;
+    }
+    #receita8 {
+      position: relative;
+      width: 200px;
+      height: 200px;
+      background-color:#8B2A2A;
+      float:left;
+    }
+    </style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Digital Health | Perfil Farmaceutico</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+
+  <!--NECESSÁRIO EM TODAS AS TELAS, POIS É A LIB AJAX-->		
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body id="page-top" background="./img/fundoDegrade.jpg">
+
+  <nav class="navbar navbar-light" style="background-color: #B80F0F;">
+    <img src="./img/logo.png" alt="Smiley face" height="70" width="240">
+
+    
+
+    <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <div id="wrapper">
+
+    <!-- Menu  -->
+    <ul class="sidebar navbar-nav" style="background-color: #5C2323;">
+	 <li class="nav-item">
+      
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Página Inicial</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Sair</span>
+        </a>
+      </li>
+     
+    </ul>
+
+    <div id="content-wrapper">
+
+      <div class="container-fluid">
+
+        <!-- Breadcrumbs-->
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item">
+                <a href="">Inicial</a>
+              </li>
+              <li class="breadcrumb-item">
+                  <a href="Farmaceutico_Paciente.html">Pesquisar Paciente</a>
+                </li>
+              
+          <li class="breadcrumb-item active">Receitas</li>
+        </ol>
+
+        <!-- Page Content -->
+       <br><br>
+        
+        <center>  
+            <div id="receitas">
+                  <div id="receita1">
+                     <br>
+                      <u  style="color:white;"> Data da consulta : </u> <br>
+                      <u style="color:white;" id="data1"> {DATA}</u> <br>
+                      <br><br>
+                      <a href="Farmaceutico_Receitas_Detalhe.html"> <button type="button" class="btn btn-secondary btn-sm" style="width:100px; height:35px; background-color:#C4C4C4; color:black;border-radius: 15px; "> Entrar </button></a>
+                  </div>
+                  <div id="receita2">
+                      <br>
+                      <u  style="color:white;"> Data da consulta : </u> <br>
+                      <u style="color:white;" id="data2"> {DATA}</u> <br>
+                      <br><br>
+                      <a href="Farmaceutico_Receitas_Detalhe.html"> <button type="button" class="btn btn-secondary btn-sm" style="width:100px; height:35px; background-color:#C4C4C4; color:black;border-radius: 15px;"> Entrar </button></a>
+                  </div>
+                  <div id="receita3">
+                      <br>
+                      <u  style="color:white;"> Data da consulta : </u> <br>
+                      <u style="color:white;" id="data3"> {DATA}</u> <br>
+                      <br><br>
+                      <a href="Farmaceutico_Receitas_Detalhe.html"> <button type="button" class="btn btn-secondary btn-sm" style="width:100px; height:35px; background-color:#C4C4C4; color:black;border-radius: 15px;"> Entrar </button></a>
+                  </div>
+                  <div id="receita4">
+                      <br>
+                      <u  style="color:white;"> Data da consulta : </u> <br>
+                      <u style="color:white;" id="data4"> {DATA}</u> <br>
+                      <br><br>
+                     <a href="Farmaceutico_Receitas_Detalhe.html"> <button type="button" class="btn btn-secondary btn-sm" style="width:100px; height:35px; background-color:#C4C4C4; color:black;border-radius: 15px;"> Entrar </button></a>
+
+                  </div>
+                  <div id="receita5">
+                      <br>
+                      <u  style="color:white;"> Data da consulta : </u> <br>
+                      <u style="color:white;" id="data5"> {DATA}</u> <br>
+                      <br><br>
+                      <a href="Farmaceutico_Receitas_Detalhe.html"> <button type="button" class="btn btn-secondary btn-sm" style="width:100px; height:35px; background-color:#C4C4C4; color:black;border-radius: 15px;"> Entrar </button></a>
+                  </div>
+                  <div id="receita6">
+                      <br>
+                      <u  style="color:white;"> Data da consulta : </u> <br>
+                      <u style="color:white;" id="data6"> {DATA}</u> <br>
+                      <br><br>
+                      <a href="Farmaceutico_Receitas_Detalhe.html"> <button type="button" class="btn btn-secondary btn-sm" style="width:100px; height:35px; background-color:#C4C4C4; color:black;border-radius: 15px;"> Entrar </button></a>
+                  </div>
+                  <div id="receita7">
+                      <br>
+                      <u  style="color:white;"> Data da consulta : </u> <br>
+                      <u style="color:white;" id="data7"> {DATA}</u> <br>
+                      <br><br>
+                      <a href="Farmaceutico_Receitas_Detalhe.html"> <button type="button" class="btn btn-secondary btn-sm" style="width:100px; height:35px; background-color:#C4C4C4; color:black;border-radius: 15px;"> Entrar </button></a>
+                  </div>
+                  <div id="receita8">
+                      <br>
+                      <u  style="color:white;"> Data da consulta : </u> <br>
+                      <u style="color:white;" id="data8"> {DATA}</u> <br>
+                      <br><br>
+                      <a href="Farmaceutico_Receitas_Detalhe.html"> <button type="button" class="btn btn-secondary btn-sm" style="width:100px; height:35px; background-color:#C4C4C4; color:black;border-radius: 15px;"> Entrar </button></a>
+                  </div>
+              
+              </div>
+         
+      </center>     
+
+
+    </div>
+
+  </div>
+
+
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="js/sb-admin.min.js"></script>
+
+</body>
+
+</html>
+
+<script> 
+
+$(document).ready(function () {
+			console.log("ready!");
+      //$.ajax
+
+//ARRUMAR ESSA TELA TAMBÉM, A PARTE DE TRAZER O 
+			
+			$.ajax("http://localhost:8080/receitas/cpf/" + localStorage.getItem('cpfPesquisa'),{
+				//Tipo GET, POST, PUT, DELET
+				method: 'GET',
+				
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				
+				success: function (resposta) {
+					
+          //localStorage.setItem("cpfPesquisa", $('#cpfPesquisa').val());
+					if (resposta) {
+						console.log(resposta)
+					
+
+            $('#data1').text(resposta[0].dataReceita);
+            $('#data2').text(resposta[1].dataReceita);
+            $('#data3').text(resposta[2].dataReceita);
+            $('#data4').text(resposta[3].dataReceita);
+            $('#data5').text(resposta[4].dataReceita);
+            $('#data6').text(resposta[5].dataReceita);
+            $('#data7').text(resposta[6].dataReceita);
+            $('#data8').text(resposta[7].dataReceita);
+           
+            
+            
+            
+					} else {
+						alert('Ocorreu um erro. Tente novamente')
+					}
+				},
+				error: function (erro) {
+          alert('Ocorreu um erro. Tente novamente')
+					console.log(erro);
+				}
+			})
+
+
+    });
+ 
+    
+function apareceDesaparece(el) {
+        var display = document.getElementById(el).style.display;
+        if(display == "none")
+            document.getElementById(el).style.display = 'block';
+        else
+            document.getElementById(el).style.display = 'none';
+    }
+</script>	

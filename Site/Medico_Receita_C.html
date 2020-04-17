@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        #DIVZAO {
+          width:1090px;
+          height:690px;
+          background-color:#FDFBFB;
+          border-radius: 10px;
+           }
+
+        #DIVIZINHA {
+          width:200px;
+          height:45px;
+          background-color:#FDFBFB;
+          border: 2px solid;
+          border-color:rgb(0, 0, 0);
+        }
+        #DIVIZINHA1 {
+          width:200px;
+          height:30px;
+          background-color:#FDFBFB;
+          border: 2px solid;
+          border-color:rgb(0, 0, 0);
+
+        }
+        #numero {
+          width:130px;
+          height:41px;
+          background-color:#FDFBFB;
+          border: 0.5px solid;
+          border-color:rgb(0, 0, 0);
+        }
+        #uf {
+          width:70px;
+          height:41px;
+          background-color:#FDFBFB;
+          border: 0.5px solid;
+          border-color:rgb(0, 0, 0);
+          float: left;
+
+        }
+        #crm {
+          width:300px;
+          height:30px;
+          background-color:#FDFBFB;
+          border: 2px solid;
+          border-color:rgb(0, 0, 0);
+
+        }
+        #crm1 {
+          width:300px;
+          height:43px;
+          background-color:#FDFBFB;
+          border: 2.5px solid;
+          border-color:rgb(0, 0, 0);
+
+        }
+
+        #numero1 {
+          width:130px;
+          height:28px;
+          background-color:#FDFBFB;
+          border: 0.5px solid;
+          border-color:rgb(0, 0, 0);
+        }
+        #uf1 {
+          width:70px;
+          height:28px;
+          background-color:#FDFBFB;
+          border: 0.5px solid;
+          border-color:rgb(0, 0, 0);
+          float: left;
+
+        }
+        #teste {
+          width:800px;
+          height:76px;
+          background-color:rgb(52, 45, 154);
+          border: 0.5px solid;
+          border-color:rgb(0, 0, 0);
+
+        }
+        #REMEDIO {
+          width:380px;
+          height:80px;
+          background-color:#B7B4B4;
+          border: 0.5px solid;
+          border-color:rgb(0, 0, 0);
+
+        }
+        #PRESCRICAO {
+          width:380px;
+          height:200px;
+          background-color:#B7B4B4;
+          border: 0.5px solid;
+          border-color:rgb(0, 0, 0);
+
+        }
+        #form {
+          width:94%;
+          height:100px;
+          float: left;
+
+
+        }
+        #responsaveis {
+          width:90%;
+          height:180px;
+          background-color:#B7B4B4;
+          border: 1px solid;
+          border-color:rgb(0, 0, 0);
+          float: left;
+
+        }
+        #form1 {
+          width:80%;
+          height:350px;
+          float: left;
+          margin-left: 10%;
+          margin-top: 13%;
+
+
+        }
+        #form2 {
+          width:980px;
+          height:350px;
+          background-color:rgb(94, 194, 74);
+          border: 0.5px solid;
+          border-color:rgb(218, 203, 203);
+
+        }
+      #coluna1{
+        float:left;
+        height: 100%;
+        width: 50%;
+
+      }
+      #coluna2{
+        float:left;
+        height: 100%;
+        width: 50%;
+
+      }
+      #Titulo_crm{
+        float: left;
+        height: 50% ;
+        width: 100%;
+      }
+      #formulario1{
+        float: left;
+        height: 50% ;
+        width: 100%;
+      }
+      #button{
+        height: 50px;
+        width: 100%;
+        float:left;
+        margin-top: 10px;
+      }
+      #test{
+        width:70px;
+          height:28px;
+          background-color:#C7EAFB;
+          border: 0.5px solid;
+          border-color:rgb(0, 0, 0);
+          float: left;
+      }
+      #remedio_selecionado{
+          width:100%;
+          height:50%;
+          border: 0.10px solid red;
+          border-color:rgb(0, 0, 0);
+          float: left;
+      
+      }
+
+        
+    </style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Digital Health | Perfil Médico</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+
+</head>
+
+<body id="page-top" background="./img/fundoDegrade.jpg">
+
+  <nav class="navbar navbar-light" style="background-color: #B80F0F;">
+    <img src="./img/logo.png" alt="Smiley face" height="70" width="240">
+
+    
+
+    <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <div id="wrapper">
+
+    <!-- Menu  -->
+    <ul class="sidebar navbar-nav" style="background-color: #5C2323;">
+	 <li class="nav-item">
+        <a class="nav-link" href="#">
+		<i></i>
+
+          <span>Usuario</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Histórico Paciente</span>
+        </a>
+      </li>
+      
+     
+    </ul>
+
+    <div id="content-wrapper">
+
+      <div class="container-fluid">
+
+        <!-- Breadcrumbs-->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="">Inicial</a>
+          </li>
+          <li class="breadcrumb-item">
+              <a href="Medico_Principal.html">Perfil Médico</a>
+            </li>
+          <li class="breadcrumb-item active">Receituario</li>
+        </ol>
+
+        <div id = "DIVZAO">  
+          <div id="coluna1">
+            <div id="Titulo_crm">
+
+                <h5 style="margin-left: 40px;margin-top: 30px;"> NOTIFICAÇÃO DE RECEITA TIPO <b>A</b></h5> 
+
+                <!-- <b style="margin-left: 750px">DATA DE EMISSÃO </b><input type="date" style=" background-color:transparent; border: 1px solid; border-color:rgb(7, 4, 4) ; width:170px;border-radius: 5px;"> -->
+    
+                 <div id="DIVIZINHA1" style="margin-left: 40px;margin-top: 30px;">
+    
+                    <div id="uf1" style="margin-left: 0px">
+                      <center><b>UF</b></center>
+    
+                </div>
+    
+                    <div id="numero1" style="margin-left: 67px">
+                      <center><b>NUMERO</b></center>
+              </div>
+                            
+    
+                  </div>
+                  
+    
+                  <div id="DIVIZINHA" style="margin-left: 40px">
+    
+                   <div id="uf" style="margin-left: 0px">
+                      <input id="Uf_Digitado" style="background-color:transparent; border: 0.5px solid; border: 1px solid; width:69px;font-size: 24px;border-color:rgb(7, 4, 4) ">
+                      
+                </div>
+    
+                    <div id="numero" style="margin-left: 67px; ">
+                      <input id="Numero_Digitado" style="background-color:transparent; border: 0.5px solid; border: 1px solid; width:126px;font-size: 24px;border-color:rgb(7, 4, 4) ">
+    
+                </div>
+                
+                  </div>
+                  <div id="form" style="margin-left: 3%;margin-right: 0px;margin-top: 58px;" >
+                    <b  style="margin-left: 15px; margin-top: 25px;">DADOS PESSOAIS</b>
+                   <br>
+                      
+                    <label for="paciente" style="margin-top: 4%;margin-left:3% ;">PACIENTE : </label>
+                      <input id="nomePaciente" style="background-color:transparent; border: 1px solid;border-color:rgb(7, 4, 4) ; width:239px;border-radius: 5px;" >
+    
+    
+                      <label for="cpf">CPF : </label>
+                      <input id="cpfPaciente" style="background-color:transparent; border: 1px solid;border-color:rgb(7, 4, 4) ; width:120px;border-radius: 5px;"maxlength="14" onkeypress="this.value = FormataCPF(event)"onpaste="return false;" >
+                      <br>
+                      <label for="endereco"  style="margin-top: 1%;margin-left:3% ;" >ENDEREÇO : </label>
+                      <input  id="enderecoPaciente" style="background-color:transparent; border: 1px solid;border-color:rgb(7, 4, 4) ; width:239px;;border-radius: 5px;" >
+    
+                      <label for="telefone">Tel : </label>
+                      <input id="telefonePaciente" style="background-color:transparent; border: 1px solid;border-color:rgb(7, 4, 4) ; width:120px;;border-radius: 5px;" maxlength="15" onkeypress="this.value = FormatarTelefone(event)" onpaste="return false;">
+                      <br><br>
+                      </div>  
+            </div>
+                           <!--FIMM PARTE1-->
+
+
+
+            <div id="formulario1" style="margin-top: 4%;">
+                <b style="margin-left: 30px;"> RESPONSAVEIS LEGAIS</b>
+                <div id="responsaveis" style="margin-left: 31px;margin-top: 2.7%;">
+                
+
+                    <BR>
+                      <label for="nome_responsavel_1" style="margin-left: 20px;">NOME : </label>
+                      <input id="nome_responsavel_1" style="background-color:transparent; border: 1px solid;border-color:rgb(7, 4, 4) ; width:200px;border-radius: 5px;" >
+                      <label for="cpf_responsavel_1" style="margin-left: 9px;">CPF : </label>
+                      <input id="cpf_responsavel_1" style="background-color:transparent; border: 1px solid;border-color:rgb(7, 4, 4) ; width:120px;border-radius: 5px;"  maxlength="14" onkeypress="this.value = FormataCPF(event)"onpaste="return false;">
+                      <br>
+                      <label for="nome_responsavel_2" style="margin-left: 20px;">NOME : </label>
+                      <input id="nome_responsavel_2" style="background-color:transparent; border: 1px solid;border-color:rgb(7, 4, 4) ; width:200px;border-radius: 5px;" >
+                      <label for="cpf_responsavel_2" style="margin-left: 9px;">CPF : </label>
+                      <input id="cpf_responsavel_2" style="background-color:transparent; border: 1px solid;border-color:rgb(7, 4, 4) ; width:120px;border-radius: 5px;" maxlength="14" onkeypress="this.value = FormataCPF(event)"onpaste="return false;">
+                      <br>
+                      <label for="nome_responsavel_3" style="margin-left: 20px;">NOME : </label>
+                      <input id="nome_responsavel_3" style="background-color:transparent;border-color:rgb(7, 4, 4) ; border: 1px solid; width:200px;border-radius: 5px;" >
+                      <label for="cpf_responsavel_3" style="margin-left: 9px;">CPF : </label>
+                      <input id="cpf_responsavel_3" style="background-color:transparent;border-color:rgb(7, 4, 4) ; border: 1px solid; width:120px;border-radius: 5px;"maxlength="14" onkeypress="this.value = FormataCPF(event)"onpaste="return false;" >
+                      <br>
+                      <label for="nome_responsavel_4" style="margin-left: 20px;">NOME : </label>
+                      <input id="nome_responsavel_4" style="background-color:transparent;border-color:rgb(7, 4, 4); border: 1px solid ; width:200px;border-radius: 5px;" >
+                      <label for="cpf_responsavel_4" style="margin-left: 9px;">CPF : </label>
+                      <input id="cpf_responsavel_4" style="background-color:transparent;border-color:rgb(7, 4, 4) ; border: 1px solid; width:120px;border-radius: 5px;"maxlength="14" onkeypress="this.value = FormataCPF(event)"onpaste="return false;" >
+                      <br>
+                    </div>
+              <!--FIM AQUI FORM1-->
+            </div>
+
+
+          </div>
+
+          <div id="coluna2">
+              <input type="date" style=" background-color:transparent; margin-right: 16%;margin-top: 30px; border: 1px solid; border-color:rgb(7, 4, 4) ; width:170px;border-radius: 5px;float: right;"><b style="float: right;margin-right: 2%;margin-top: 30px;">DATA DE EMISSÃO </b>
+             <div id="crm"style="margin-top:16.5%; margin-left:21%"> 
+                <center><b>IDENTIFICAÇÃO MÉDICA (CRM)</b></center>
+
+             </div>
+             <div id="crm1" style= margin-left:21%> 
+                <input id="CRM_Digitado" style="background-color:transparent; border: 0.5px solid; border: 1px solid; width:100%;font-size: 24px;border-color:rgb(7, 4, 4); ">
+
+              </div>
+             
+                <div  id="form1" style="margin-top: 11%;">
+                   
+                  <b  style="margin-left: 25px; margin-top: 25px;">MEDICAMENTO RECEITADO</b>
+
+                  <center> <div id="REMEDIO"  style="margin-left: 0px;margin-top: 4%;">
+                    <br>
+                    <center>
+                        <form name="form"> 
+                            <select id="remedios" name="remedios" style=" width:300px;background-color:#FDFBFB;"> 
+                              <option value="0"> Selecione um remédio               </option>
+                              <option value="1"> ALENDRONATO DE SÓDIO                   </option> 
+                              <option value="2">ALOPURINOL                              </option> 
+                              <option value="3">AMOXICILINA                             </option> 
+                              <option value="4">AMOXICILINA COM CLAVULANATO DE POTÁSSIO </option> 
+                              <option value="5">BENZETACIL                              </option> 
+                              <option value="6">BUDESONIDA                              </option>
+                              <option value="7">DAPSONA                                 </option> 
+                              <option value="8">DEXAMETASONA E ACETATO DE DEXAMETASONA  </option> 
+                              <option value="9">ESPIRONOLACTONA                         </option> 
+                              <option value="10">ESTROGÊNIOS CONJUGADOS                 </option> 
+                              <option value="11">FLUCONAZOL                             </option> 
+                              <option value="12">FUROSEMIDA                             </option> 
+                              <option value="13">INSULINA HUMANA NPH E INSULINA HUMANA  </option> 
+                              <option value="13">IPRATROPIO                             </option> 
+                              <option value="14">LORATADINA                             </option> 
+                              <option value="15">LOPINAVIR COM RITONAVIR                </option> 
+                              <option value="16">PARACETAMOL                            </option> 
+                              <option value="17">PERÓXIDO DE BENZOÍLA                   </option> 
+                              <option value="18">PIRIMETAMINA                           </option> 
+                              <option value="19">RISPERIDONA                            </option> 
+                              <option value="21">RITONAVIR                              </option> 
+                              <option value="22">SULFADIAZINA                           </option> 
+                              <option value="23">SULFADIAZINA DE PRATA                  </option> 
+                              <option value="24">SULFAMETOXAZOL COM TRIMETOPRIMA        </option> 
+                              <option value="25">VALPROATO DE SODIO (OU ACIDO VALPROICO)</option> 
+                              <option value="26">VARFARINA SÓDICA</option> 
+                              <option value="27">ZOLEDRÔNICO</option> 
+                              <option value="28">ZOPICLONA</option> 
+                            </select> 
+                           <button name="add" type="button" onClick="AdicionaRemedio()" value="Adicionar" class="btn btn-secondary btn-sm" style="width:30px; height:30px;background-color:#FDFBFB;border-radius: 15px; color:black;"  > + </button>
+                </center>
+
+                  </div>  </center>
+                  <br>
+    
+                    <center>
+                      
+                <div id="PRESCRICAO" style="margin-left: 0px;">
+                    <div id="remedio_selecionado">
+                        <textarea name="remedios_prescritos" class="form-control " style="margin-top:5%;width:340px; font-size: 15px; margin-left: 2px; background-color:#FDFBFB;"  placeholder="Remedios prescritos" ></textarea>
+
+                      </div>
+                    </form> 
+                    <br>
+                      <textarea class="form-control " id="precricaoPaciente" style="width:340px; font-size: 15px; margin-top:25%; margin-left: 2px; background-color:#FDFBFB;"  placeholder="Digite especificações da receita" ></textarea>
+                </div>  </center>
+               
+           </div>
+           <br>
+           <b style="margin-left: 80px;">Assinatura</b> <br>
+           <input id= "assinatura_Medico" style="margin-left: 80px;"" type="file">
+           <br>
+           <div id="button">
+                <a href="Medico_Principal.html"><button type="button" class="btn btn-secondary btn-sm" style="width:100px; height:35px;margin-left: 43%;  background-color:#B7B4B4;border-radius: 15px; border-color: black; color:black;"> Voltar </button></a>
+            <a href="Medico_Assinatura.html"><button type="button" class="btn btn-secondary btn-sm" style="width:130px; height:35px;background-color:#B7B4B4;border-radius: 15px; border-color: black; color:black;"  > Salvar  </button></a>
+            
+              </div>
+         
+           
+            </div>
+            
+          <!-- FIM DIVIZAO-->
+            </div>
+   
+           
+    </div>
+
+  </div>
+
+
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="js/sb-admin.min.js"></script>
+
+</body>
+
+</html>
+<script>
+  function verificaNumero(n){
+		if(n.which != 8 && n.which != 0 && (n.which <47 || n.which >57) && (n.which <48 || n.which >56) ){
+			return false;
+		}
+	}
+	$(document).ready(function() {  
+	$("#cpf_responsavel_1").keypress(verificaNumero);
+  $("#cpf_responsavel_2").keypress(verificaNumero);
+	$("#cpf_responsavel_3").keypress(verificaNumero);
+	$("#cpf_responsavel_4").keypress(verificaNumero);
+	$("#cpfPaciente").keypress(verificaNumero);
+
+  $("#telefonePaciente").keypress(verificaNumero);
+
+
+	});
+function FormataCPF(evt){
+		vr = (navigator.appName == 'Netscape') ? evt.target.value : evt.srcElement.value;
+		if(vr.length ==3) vr = vr+".";
+		if(vr.length ==7) vr = vr+".";
+		if(vr.length ==11) vr = vr+"-";
+		return vr;
+	}
+  function FormatarTelefone(evt){
+		vr = (navigator.appName == 'Netscape') ? evt.target.value : evt.srcElement.value;
+		if(vr.length==0)vr = vr+"(";
+		if(vr.length==3)vr = vr+") ";
+		if(vr.length==10)vr = vr+"-";
+	
+	
+		return vr;
+						
+	}
+		  function AdicionaRemedio(){ 
+   var i = document.form.remedios.selectedIndex; 
+   var j = document.form.remedios_prescritos.value;
+       j += document.form.remedios[i].text; 
+   document.form.remedios_prescritos.value = j + "\n";
+  } 
+</script>
+

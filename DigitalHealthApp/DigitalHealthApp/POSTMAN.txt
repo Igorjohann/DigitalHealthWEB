@@ -1,0 +1,16 @@
+{
+	"nomeMedico": "Vinicius",
+	"telefone" : "991053227",
+	"cpf" : "12345",
+	"email" : "vini@grupp",
+	"especialidade" : "cardio",
+	"credenciais" : {
+		
+		"crm" : "12345",
+		"senha" : "12345"
+	}
+}
+
+http://localhost:8080/cadastroMedico
+
+http://localhost:8080/loginMedico

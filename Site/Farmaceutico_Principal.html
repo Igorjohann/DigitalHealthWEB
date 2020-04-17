@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Digital Health | Perfil Farmaceutico</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+
+  <!--NECESSÁRIO EM TODAS AS TELAS, POIS É A LIB AJAX-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body id="page-top" background="./img/fundoDegrade.jpg">
+  
+
+  <nav class="navbar navbar-light" style="background-color: #B80F0F;">
+    <img src="./img/logo.png" alt="Smiley face" height="70" width="240">
+
+    
+
+    <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <div id="wrapper">
+
+    <!-- Menu  -->
+    <ul class="sidebar navbar-nav" style="background-color: #5C2323;">
+	 <li class="nav-item">
+        <a class="nav-link" href="#">
+    <i></i>
+    <form action="" id="buscarPaciente">
+
+          <span>{Usuario}</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <i class="fas fa-fw fa-tachometer-alt"></i>
+          <span>Página Inicial</span>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="login.html">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Sair</span>
+        </a>
+      </li>
+     
+    </ul>
+
+    <div id="content-wrapper">
+
+      <div class="container-fluid">
+
+        <!-- Breadcrumbs-->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="">Inicial</a>
+          </li>
+          <li class="breadcrumb-item active">Pesquisar Paciente</li>
+        </ol>
+
+        <!-- Page Content -->
+        <p>Olá, {dulano}, seja bem vindo! </p> 
+        <br><br><br>
+         
+      
+       <center><img src="./img/logoSolo.png"  height="140" width="150"></center>
+        <br>
+       
+      <center> <div style="width:600px; height:175px; background-color:#8B2A2A;" id="buscacpf">
+            <br><br>
+
+              <!-- BOTÃO PRECISA ESTAR DENTRO DO FORM-->
+           <form action="" id="buscarPaciente">
+          <div class="form-group">
+            <input style="width:500px;font-size: 15px" type="cpf" class="form-control" id="cpf" maxlength="14" onkeypress="this.value = FormataCPF(event)"onpaste="return false;" placeholder="Digite o CPF do paciente.">
+          </div>
+       
+        <button type="submit" class="btn btn-secondary btn-sm"> Buscar Paciente </button>
+      </form>
+      </div>  	
+    </center>
+
+
+  
+
+    </div>
+
+  </div>
+ 
+
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="js/sb-admin.min.js"></script>
+</form>
+</body>
+
+</html>
+
+<script> 
+//-------------------------TESTE -------------------------------//
+		// pra ver se o jquery funciona
+		$(document).ready(function () {
+			console.log("ready!");
+		});
+
+		$('#buscarPaciente').on('submit', function (event) {
+			event.preventDefault();
+
+		
+
+		
+			//URL como fazemos com o postman
+      //PEGAR O ID DO INPUT!!!!!!!!!!!!!!!!!!!!!!
+			$.ajax("http://localhost:8080/Buscapacientes/cpf/" + $('#cpf').val(), {
+				//Tipo GET, POST, PUT, DELET
+				method: 'GET',
+				//ISSO É PADRÃO, OU SEJA, O MESMO QUE COLOCAMOS NO BODY QUANDO FAZEMOS UMA REQUISIÇÃO NO POSTMAN
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				
+				success: function (resposta) {
+					
+					if (resposta) {
+						console.log(resposta)
+						alert('PACIENTE ENCONTRADO')
+					} else {
+						alert('TENTE NOVAMENTE')
+					}
+				},
+				error: function (erro) {
+					console.log(erro);
+				}
+			})
+
+
+		})
+
+
+function apareceDesaparece(el) {
+        var display = document.getElementById(el).style.display;
+        if(display == "none")
+            document.getElementById(el).style.display = 'block';
+        else
+            document.getElementById(el).style.display = 'none';
+    }
+
+      
+  function verificaNumero(n){
+		if(n.which != 8 && n.which != 0 && (n.which <47 || n.which >57) && (n.which <48 || n.which >56) ){
+			return false;
+		}
+	}
+	$(document).ready(function() {  
+	$("#cpf").keypress(verificaNumero);
+
+
+
+	});
+    function FormataCPF(evt){
+		vr = (navigator.appName == 'Netscape') ? evt.target.value : evt.srcElement.value;
+		if(vr.length ==3) vr = vr+".";
+		if(vr.length ==7) vr = vr+".";
+		if(vr.length ==11) vr = vr+"-";
+		return vr;
+	}
+ 
+</script>	

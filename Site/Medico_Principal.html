@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Digital Health | Perfil Médico</title>
+
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Page level plugin CSS-->
+  <link href="vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin.css" rel="stylesheet">
+
+  <!--NECESSÁRIO EM TODAS AS TELAS, POIS É A LIB AJAX-->		
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<body id="page-top" background="./img/fundoDegrade.jpg">
+
+  <nav class="navbar navbar-light" style="background-color: #B80F0F;">
+    <img src="./img/logo.png" alt="Smiley face" height="70" width="240">
+
+    
+
+    <button class="btn btn-link btn-sm text-white order-1 order-sm-0" id="sidebarToggle" href="#">
+      <i class="fas fa-bars"></i>
+    </button>
+  </nav>
+
+  <div id="wrapper">
+
+    <!-- Menu  -->
+    <ul class="sidebar navbar-nav" style="background-color: #5C2323;">
+	 <li class="nav-item">
+        <a class="nav-link" href="#">
+		<i></i>
+
+          <span>Usuario</span>
+        </a>
+      </li>
+     
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Emitir receitas</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+          <h6 class="dropdown-header" >TIPO A</h6>
+          <a class="dropdown-item"  onclick="apareceDesaparece('Receita_A')"  >A1 - Entorpecentes</a>
+          <a class="dropdown-item" onclick="apareceDesaparece('Receita_A')">A2 - Entorpecentes</a>
+          <a class="dropdown-item" onclick="apareceDesaparece('Receita_A')">A3 - Psicotrópicos</a>
+          <div class="dropdown-divider"></div>
+          <h6 class="dropdown-header">TIPO B</h6>
+          <a class="dropdown-item"  onclick="apareceDesaparece('Receita_B')">B1 - Psicotrópicos</a>
+          <a class="dropdown-item " onclick="apareceDesaparece('Receita_B')">B2 - Psicotrópicos <br>  Anorexigenos</a>
+          
+		  <div class="dropdown-divider"></div>
+          <h6 class="dropdown-header">TIPO C</h6>
+          <a class="dropdown-item" onclick="apareceDesaparece('Receita_C')">C1 - Outras substancias <br> sujeitas a controle <br> especial</a>
+          <a class="dropdown-item " onclick="apareceDesaparece('Receita_C')">C2 - Retinoicas de <br> uso tópico</a>
+          <a class="dropdown-item " onclick="apareceDesaparece('Receita_C')">C3 - Retinoicas de <br> uso sistêmico</a>
+		  <a class="dropdown-item " onclick="apareceDesaparece('Receita_C')">C4 - Imunosopressoras</a>
+		  <a class="dropdown-item active" onclick="apareceDesaparece('Receita_C')">C5 - Anabolizantes</a>
+		  
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" href="login.html">
+          <i class="fas fa-fw fa-folder"></i>
+          <span>Sair</span>
+        </a>
+      </li>
+    </ul>
+
+    <div id="content-wrapper">
+
+      <div class="container-fluid">
+
+        <!-- Breadcrumbs-->
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item">
+            <a href="">Inicial</a>
+          </li>
+          <li class="breadcrumb-item active">Perfil Médico</li>
+        </ol>
+
+        <!-- Page Content -->
+        <p>Olá, <a id="crmMedicoP"></A>{dulano}, seja bem vindo! </p> 
+        
+        <center><img id="imgLogo" src="./img/logoSolo.png" style="display:block" height="170" width="180"></center>
+		<div style="display:none" id = "Receita_A" >
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Tipo/Cor do Documento</th>
+      <th scope="col">Quantidade Máxima(periodo <br> de tratamento)</th>
+      <th scope="col">Quantidade máx de Substancias</th>
+	  <th scope="col">Validade/Abrangência da receita</th>
+	  <th scope="col">Aquisição do receituário</th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="col">Notificação de receita A <br> (amarela)</th>
+      <td>5 ampolas ou tratamento para 30 dias</td>
+      <td>Uma</td>
+      <td>30 dias / Em todo territótio nacional</td>
+	  <td>Distribuição gratuita pela Vigiância<br> Sanitaria Municipal</td>
+
+    </tr>
+   
+  </tbody>
+</table>	
+<a href="Medico_Receita_A.html"> <button type="button" class="btn btn-secondary btn-lg" style="margin-left: 84% ; background-color: #B80F0F;" >Ir para a receita</button></a>	
+   
+
+
+		</div>
+       
+	   <div style="display:none" id = "Receita_B">
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Tipo/Cor do Documento</th>
+      <th scope="col">Quantidade Máxima(periodo <br> de tratamento)</th>
+      <th scope="col">Quantidade máx de Substancias</th>
+	  <th scope="col">Validade/Abrangência da receita</th>
+	  <th scope="col">Aquisição do receituário</th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="col">Notificação de receita B <br> (azul)</th>
+      <td>5 ampolas ou tratamento para 60 dias</td>
+      <td>Uma</td>
+      <td>30 dias / Em todo territótio nacional</td>
+	  <td>Numeração fornecida pela Vigiância Sanitaria<br>Municipal. Talonário
+	  impresso pelo prescritor.</td>
+
+    </tr>
+   
+  </tbody>
+</table>		
+<a href="Medico_Receita_B.html"> <button type="button" class="btn btn-secondary btn-lg" style="margin-left: 84% ; background-color: #B80F0F;" >Ir para a receita</button></a>	
+		</div>
+		
+		  <div  style="display:none" id = "Receita_C">
+<table class="table table-bordered">
+  <thead>
+    <tr>
+      <th scope="col">Tipo/Cor do Documento</th>
+      <th scope="col">Quantidade Máxima(periodo <br> de tratamento)</th>
+      <th scope="col">Quantidade máx de Substancias</th>
+	  <th scope="col">Validade/Abrangência da receita</th>
+	  <th scope="col">Aquisição do receituário</th>
+
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+	      <th Receita de controle especial <br> (branca)</th>
+      <td>5 ampolas ou tratamento para 60 dias. <br>Antiparkisoniano
+		e Anticonvulsionante, tratamento para 180 dias</td>
+      <td>Três</td>
+      <td>30 dias / Em todo territótio nacional</td>
+	  <td>Prescritor responsável pela confecção <br> da receita de controle especial.</td>
+
+    </tr>
+   
+  </tbody>
+</table>		
+<a href="Medico_Receita_C.html"> <button type="button" class="btn btn-secondary btn-lg" style="margin-left: 84% ; background-color: #B80F0F;" >Ir para a receita</button></a>	
+
+		</div>
+      </div>
+     
+   
+    </div>
+
+  </div>
+
+
+  <a class="scroll-to-top rounded" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="js/sb-admin.min.js"></script>
+
+</body>
+
+</html>
+
+<script> 
+
+$(document).ready(function () {
+			console.log("ready!");
+	
+$.ajax("http://localhost:8080/loginMedico", {
+
+//Tipo GET, POST, PUT, DELET
+method: 'GET',
+
+headers: {
+  'Content-Type': 'application/json',
+},
+
+
+success: function (resposta) {
+					
+					if (resposta) {
+						console.log(resposta)
+		
+
+            $('#crmMedicoP').localStorage.getItem("crmMedico");
+            //$('#id3').text(resposta[2].tipoReceita);
+            
+            console.log(resposta)
+            
+					} else {
+					
+					}
+				},
+				error: function (erro) {
+          console.log(resposta)
+					console.log(erro);
+        }
+        })
+      });
+
+
+   
+function apareceDesaparece(el) {
+        var display = document.getElementById(el).style.display;
+        if(display == "none")
+            document.getElementById(el).style.display = 'block';
+
+        else
+            document.getElementById(el).style.display = 'none';
+    }
+</script>	
