@@ -1,0 +1,1 @@
+ssh -i C:\users\ilevino\downloads\DigitalHealthBackEnd.pem ec2-user@54.237.91.79
